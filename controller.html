@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Ring Clash • Controller</title><link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script></head><body class="pad">
+<section id="join" class="join"><h1>STEP INTO<br>THE <em>RING</em></h1>
+<input id="nm" placeholder="YOUR NAME" maxlength="12"><input id="rm" placeholder="WWE-1234" maxlength="12" autocapitalize="characters">
+<div id="cls" style="display:flex;gap:8px"><button data-c="0" class="on">BRAWLER<br>balanced</button><button data-c="1">SPEEDSTER<br>fast</button><button data-c="2">TANK<br>heavy</button></div><button id="go">CONNECT</button><div id="info" style="text-align:center;font-size:12px;color:#aab">Turn your phone sideways</div></section>
+<main id="pad" hidden><div id="top"><span id="me">YOU</span><div class="bar"><i id="hp"></i></div><span>SPECIAL</span><div class="bar"><i id="mt" style="width:0"></i></div></div>
+<div id="ctl"><div id="stick"><div id="knob"></div></div>
+<div id="btns"><button class="p" data-k="punch">PUNCH</button><button class="k" data-k="kick">KICK</button><button class="g" data-k="grab">GRAB / THROW</button><button class="b" data-k="block">BLOCK</button><button class="d" data-k="dash">DASH / DODGE</button></div></div></main>
+<script src="controller.js"></script></body></html>
